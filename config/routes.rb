@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
-
+  root 'static_pages#home'
+  get 'static_pages/about'
   get 'static_pages/help'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -43,7 +43,6 @@ Rails.application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-root 'application#hello'
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
